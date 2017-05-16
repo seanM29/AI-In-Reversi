@@ -1,0 +1,17 @@
+main: main.o AI.o Reversi.o Node.o                      #如果main.o或者employee.o日期比main新
+    g++ main.o AI.o Reversi.o Node.o -o main       #千万注意前面的TAB不能漏掉
+
+main.o: main.cpp Reversi.h
+    g++ -c main.cpp
+
+AI.o: AI.cpp Reversi.h AI.h
+    g++ -c AI.cpp
+
+Reversi.o: Reversi.cpp Reversi.h 
+    g++ -c Reversi.cpp
+
+Node.o: Node.cpp Node.h 
+    g++ -c Node.cpp
+
+clean:
+    rm *.o

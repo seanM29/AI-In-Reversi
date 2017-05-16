@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reversi</title>
+        <script type="text/javascript" src="./js/main.js"> </script>
+        <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.8.1/dist/progressbar.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+        <link href="./css/main.css" rel="stylesheet" type="text/css" />
+        <link href="./css/gear.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="board">
+            
+            <div class="score_board">
+                <div id="white_score" class="score_area">
+                    <div class="circle_white">
+                        <div class="inner_circle_white"></div>
+                    </div>
+                    <div id="white_score_digit"> 2 </div>
+                </div>
+                <div id="black_score" class="score_area">
+                    <div id="black_score_digit"> 2 </div>
+                    <div class="circle_black">
+                        <div class="inner_circle_black"></div>
+                    </div>
+                </div>
+                <div class="game_header">Reversi</div>
+            </div>
+            <div id="main_board">
+                <div id="circle_0" class="circle"> 
+                </div>
+                <div id="circle_1" class="circle"> </div>
+                <div id="circle_2" class="circle"> </div>
+                <div id="circle_3" class="circle"> </div>
+                <div id="circle_4" class="circle"> </div>
+				<div id="circle_5" class="circle"> </div>
+                <div id="circle_6" class="circle"> </div>
+                <div id="circle_7" class="circle"> </div>
+                <div id="circle_8" class="circle"> </div>
+                <div id="circle_9" class="circle"> </div>
+                <div id="circle_10" class="circle"> </div>
+                <div id="circle_11" class="circle"> </div>
+                <div id="circle_12" class="circle"> </div>
+                <div id="circle_13" class="circle"> </div>
+                <div id="circle_14" class="circle"> </div>
+                <div id="circle_15" class="circle"> </div>
+                <div id="circle_16" class="circle"> </div>
+                <div id="circle_17" class="circle"> </div>
+                <div id="circle_18" class="circle"> </div>
+                <div id="circle_19" class="circle"> </div>
+                <div id="circle_20" class="circle"> </div>
+                <div id="circle_21" class="circle"> </div>
+                <div id="circle_22" class="circle"> </div>
+                <div id="circle_23" class="circle"> </div>
+                <div id="circle_24" class="circle"> </div>
+                <div id="circle_25" class="circle"> </div>
+                <div id="circle_26" class="circle"> </div>
+                <div id="circle_27" class="circle_white">
+                    <div class="inner_circle_white"></div>
+                </div>
+                <div id="circle_28" class="circle_black"> 
+                    <div class="inner_circle_black"></div>
+                </div>
+                <div id="circle_29" class="circle"> </div>
+                <div id="circle_30" class="circle"> </div>
+                <div id="circle_31" class="circle"> </div>
+                <div id="circle_32" class="circle"> </div>
+                <div id="circle_33" class="circle"> </div>
+                <div id="circle_34" class="circle"> </div>
+
+                <div id="circle_35" class="circle_black"> 
+                    <div class="inner_circle_black"></div>
+                </div>
+                <div id="circle_36" class="circle_white"> 
+                    <div class="inner_circle_white"></div>
+				</div>
+
+                <div id="circle_37" class="circle"> </div>
+                <div id="circle_38" class="circle"> </div>
+                <div id="circle_39" class="circle"> </div>
+                <div id="circle_40" class="circle"> </div>
+                <div id="circle_41" class="circle"> </div>
+                <div id="circle_42" class="circle"> </div>
+                <div id="circle_43" class="circle"> </div>
+                <div id="circle_44" class="circle"> </div>
+                <div id="circle_45" class="circle"> </div>
+                <div id="circle_46" class="circle"> </div>
+                <div id="circle_47" class="circle"> </div>
+                <div id="circle_48" class="circle"> </div>
+                <div id="circle_49" class="circle"> </div>
+                <div id="circle_50" class="circle"> </div>
+                <div id="circle_51" class="circle"> </div>
+                <div id="circle_52" class="circle"> </div>
+                <div id="circle_53" class="circle"> </div>
+                <div id="circle_54" class="circle"> </div>
+                <div id="circle_55" class="circle"> </div>
+                <div id="circle_56" class="circle"> </div>
+                <div id="circle_57" class="circle"> </div>
+                <div id="circle_58" class="circle"> </div>
+                <div id="circle_59" class="circle"> </div>
+                <div id="circle_60" class="circle"> </div>
+                <div id="circle_61" class="circle"> </div>
+                <div id="circle_62" class="circle"> </div>
+                <div id="circle_63" class="circle"> </div>
+            </div>
+            <div class="progress_board">
+                <div class="gear">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="heart"></div>
+                </div>
+                <div id="progress_bar"></div>
+                <div id="count_down"></div>
+            </div>
+                <button type="button" id="reset" onclick="reSetTimer()"> Click</button>
+                <button type="button" id="reset" onclick="paintBoard()"> Paint</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+.gear {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    /*animation: rotate 10s infinite linear;*/
+    transform-origin: center center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.square:nth-of-type(1) {
+    transform: rotate(30deg);
+}
+
+.square:nth-of-type(2) {
+    transform: rotate(60deg);
+}
+
+.square:nth-of-type(3) {
+    transform: rotate(90deg);
+}
+
+.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background:  #8D6E63;
+    border-radius: 5px;
+}
+
+
+.heart {
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+}

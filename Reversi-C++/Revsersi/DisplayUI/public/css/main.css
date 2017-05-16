@@ -1,0 +1,202 @@
+    body {
+    background-color: #F4F4F4;
+}
+
+.board {
+    border: 2px solid;
+    border-color: #C5A84F;
+    border-radius: 10px;
+    height: 480px;
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
+/* Score board Layout */
+
+.score_board {
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.game_header {
+    position: absolute;
+    float: right;
+    width: 360px;
+    text-align: center;
+    margin-top: 36px;
+    color: #8D6E63;
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+    line-height: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#white_score {
+    float: left;
+    height: 32px;
+    width: 84px;
+    margin-top: 24px;
+    margin-left: 25px;
+}
+
+#white_score_digit {
+    float: right;
+    width: 50px;
+    font-size: 16px;
+    color: #C08E2B;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#black_score {
+    float: right;
+    height: 32px;
+    width: 84px;
+    margin-top: 24px;
+    margin-right: 28px;
+}
+
+#black_score_digit {
+    float: left;
+    width: 50px;
+    font-size: 16px;
+    color: #C08E2B;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+/* Main board Layout*/
+
+#main_board {
+    height: 320px;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.circle {
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: #C5A84F;
+    margin: 2px;
+    height: 26px;
+    width: 26px;
+    background: #EAE3D4;
+}
+
+.circle_white {
+    display: inline-block;
+    border-radius: 50%;
+    border: 0px;
+    margin: 2px;
+    height: 30px;
+    width: 30px;
+    background: #F79326;
+}
+
+.circle_white_Top {
+    display: inline-block;
+    border-radius: 50%;
+    border: 0px;
+    margin: 2px;
+    height: 30px;
+    width: 30px;
+    background: #F79326;
+    animation:Choose 3s infinite;
+    animation-direction: alternate;
+}
+
+.inner_circle_white_Top {
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-left: 3px;
+    border: 2px solid white;
+    
+    height: 20px;
+    width: 20px;
+}
+
+.inner_circle_white {
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-left: 3px;
+    border: 2px solid white;
+    height: 20px;
+    width: 20px;
+}
+
+.circle_black {
+    display: inline-block;
+    border-radius: 50%;
+    border: 0px;
+    margin: 2px;
+    height: 30px;
+    width: 30px;
+    background: #61A287;
+}
+
+.inner_circle_black {
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-left: 3px;
+    border: 2px solid white;
+    height: 20px;
+    width: 20px;
+}
+
+.circle_black_Top {
+    display: inline-block;
+    border-radius: 50%;
+    border: 0px;
+    margin: 2px;
+    height: 30px;
+    width: 30px;
+    background: #61A287;
+    animation:Choose 3s infinite;
+    animation-direction: alternate;
+}
+
+.inner_circle_black_Top {
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-left: 3px;
+    border: 2px solid white;
+    height: 20px;
+    width: 20px;
+}
+
+.progress_board {
+    position: relative;
+    height: 80px;
+    margin: 0 auto;
+}
+
+#progress_bar {
+    display: inline-block;
+    position: absolute;
+    float: right;
+    margin-top: 14px;
+    margin-right: 70px;
+    height: 2px;
+    width: 210px;
+}
+
+@keyframes Choose {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.67;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
